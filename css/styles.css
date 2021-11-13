@@ -52,7 +52,7 @@ body {
    padding: 0px 15px;
 }
 .section {
-   padding-top: 90px;
+   padding-top: 94px;
 }
 /*-----------------------HEADER---------------------------------*/
 
@@ -196,7 +196,7 @@ body {
 
 /*------------------------DIRECTION-----------------------------------------*/
 .direction {
-   padding-bottom: 90px;
+   padding-bottom: 94px;
 }
 .direction-list {
    display: flex;
@@ -218,7 +218,7 @@ body {
 
 .team {
    background: #F5F4FA;
-   padding-bottom: 90px;
+   padding-bottom: 94px;
 }
 .team-list {
    display: flex;
@@ -312,7 +312,7 @@ body {
 /*-----------------------PORTFOLIO---------------------------------*/
 
 .portfolio {
-   padding-bottom: 90px;
+   padding-bottom: 94px;
 }
 .portfolio-nav {
    display: flex;
