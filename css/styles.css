@@ -44,15 +44,15 @@ body {
    color: var(--main-color-text);
    margin-bottom: 50px;
 }
-.wrapper {
+.container {
    width: 1200px;
-   max-width: 100%;
    margin-left: auto;
    margin-right: auto;
    padding: 0px 15px;
 }
 .section {
    padding-top: 94px;
+   padding-bottom: 94px;
 }
 /*-----------------------HEADER---------------------------------*/
 
@@ -81,8 +81,7 @@ body {
    color: var(--main-color-text);
 }
 .header-nav {
-   margin-right: auto;
-   margin-left: 90px;
+   margin-left: 93px;
 }
 .header-nav-list {
    display: flex;
@@ -117,8 +116,9 @@ body {
 .header-contacts {
    display: flex;
    align-items: center;
+   margin-left: auto;
 }
-.header-contacts-item {
+.header-contacts-item:not(:first-child) {
    margin-left: 50px;
 }
 
@@ -186,6 +186,7 @@ body {
    letter-spacing: 0.03em;
    text-transform: uppercase;
    color: var(--main-color-text);
+   margin-bottom: 10px;
 }
 .advantages-item-text {
    font-size: 14px;
@@ -196,7 +197,7 @@ body {
 
 /*------------------------DIRECTION-----------------------------------------*/
 .direction {
-   padding-bottom: 94px;
+   padding-top: 0px;
 }
 .direction-list {
    display: flex;
@@ -218,7 +219,6 @@ body {
 
 .team {
    background: #F5F4FA;
-   padding-bottom: 94px;
 }
 .team-list {
    display: flex;
@@ -233,12 +233,17 @@ body {
    margin-top: 30px;
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 0px 0px 4px 4px;
-   padding-bottom: 30px;
 }
 .team-list-image {
    width: 100%;
    height: auto;
    display: block;
+}
+.team-item-content {
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 30px;
+   padding-bottom: 30px;
 }
 .team-item-header {
    font-weight: 500;
@@ -247,9 +252,6 @@ body {
    text-align: center;
    letter-spacing: 0.03em;
    color: var(--main-color-text);
-   margin-top: 30px;
-   padding-left: 10px;
-   padding-right: 10px;
    margin-bottom: 10px;
 }
 .team-item-text {
@@ -311,22 +313,20 @@ body {
 }
 /*-----------------------PORTFOLIO---------------------------------*/
 
-.portfolio {
-   padding-bottom: 94px;
-}
 .portfolio-nav {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
    margin-bottom: 50px;
 }
+.portfolio-nav-item:not(:last-child){
+   margin-right: 8px;
+}
 .portfolio-nav-button {
    font-style: inherit;
    font-weight: 500;
    font-size: 16px;
    line-height: 1.62;
-   margin-left: 4px;
-   margin-right: 4px;
    text-align: center;
    padding: 6px 22px;
    outline: none;
@@ -359,8 +359,9 @@ body {
 .portfolio-item-container {
    padding: 20px 24px;
    background: #FFFFFF;
-   border: 1px solid #EEEEEE;
-   border-top: none;
+   border-left: 1px solid #EEEEEE;
+   border-right: 1px solid #EEEEEE;
+   border-bottom: 1px solid #EEEEEE;
 }
 .portfolio-item-text {
    font-size: 16px;
